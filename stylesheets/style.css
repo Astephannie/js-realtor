@@ -15,8 +15,9 @@
 
 header {
   position: fixed;
-  width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  left: 45px;
+  right: 45px; }
   header .upper-nav {
     margin-bottom: 0;
     margin-top: 0; }
@@ -24,8 +25,8 @@ header {
 .navbar-nav {
   position: absolute;
   top: 0;
-  right: 40px;
-  z-index: 30; }
+  right: 15px;
+  z-index: 3; }
   .navbar-nav li a {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -36,6 +37,10 @@ header {
     background-color: transparent !important;
     color: #e5218a; }
     .navbar-nav li a:focus path, .navbar-nav li a:hover path {
+      fill: #e5218a; }
+    .navbar-nav li a:focus rect, .navbar-nav li a:hover rect {
+      fill: #e5218a; }
+    .navbar-nav li a:focus polygon, .navbar-nav li a:hover polygon {
       fill: #e5218a; }
   .navbar-nav li .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.5); }
