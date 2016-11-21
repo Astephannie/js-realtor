@@ -14,4 +14,17 @@ $(document).ready(function() {
 			});
 		} // End if
 	});
+     
+});
+
+
+var a = $(".fixed-nav").offset().top;
+
+$(document).scroll(function(){
+    if($(this).scrollTop() > a)
+    {   
+       $('.fixed-nav').css({"background":"red"});
+    } else {
+       $('.fixed-nav').css({"background":"transparent"});
+    }
 });

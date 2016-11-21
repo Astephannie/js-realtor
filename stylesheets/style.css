@@ -1,25 +1,31 @@
-.section .frame {
-  position: absolute;
-  border: 1px solid #e5218a;
-  top: 45px;
-  bottom: 45px;
-  left: 45px;
-  right: 45px; }
+.section {
+  position: relative; }
+  .section .frame {
+    position: absolute;
+    border: 1px solid #e5218a;
+    top: 45px;
+    bottom: 35px;
+    left: 45px;
+    right: 45px;
+    z-index: 1; }
 
 .txt-center {
   text-align: center; }
+
+.txt-justify {
+  text-align: justify; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-left {
+  text-align: left; }
 
 .txt-gray {
   color: #878787; }
 
 .txt-white {
   color: #fff; }
-
-.txt-yellow {
-  color: #FBFF01; }
-
-.txt-right {
-  text-align: right; }
 
 .txt-pink {
   color: #e5218a; }
@@ -87,7 +93,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5); }
 
 .fixed-nav {
-  background-color: #231f20;
+  background-color: transparent;
   border-radius: 0 !important; }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
@@ -114,7 +120,7 @@ header {
       background-position: 99% 50%; }
   #firstPage .bottom-content {
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
     width: 100%; }
     #firstPage .bottom-content p {
       text-align: center; }
@@ -122,6 +128,36 @@ header {
       margin-top: 15px;
       position: relative;
       z-index: 5; }
+
+#secondPage .content {
+  position: relative;
+  z-index: 5; }
+  #secondPage .content .content-slider {
+    padding: 110px 40px 60px 105px; }
+    #secondPage .content .content-slider .cost {
+      font-size: 50px;
+      color: #e5218a;
+      text-transform: uppercase; }
+    #secondPage .content .content-slider .frame-feature {
+      border: 1px solid #bfbfbf;
+      padding: 10px 0px; }
+      #secondPage .content .content-slider .frame-feature img {
+        height: 25px;
+        padding-bottom: 5px; }
+    #secondPage .content .content-slider h5 {
+      padding: 10px 30px; }
+    #secondPage .content .content-slider button {
+      border: 4px solid #e5218a;
+      border-radius: 0;
+      padding: 13px 30px;
+      font-weight: bold;
+      font-size: 12px;
+      background: transparent; }
+  #secondPage .content .image-slider {
+    background-image: url(../assets/images/picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; }
 
 footer .bottom-right {
   position: fixed;
