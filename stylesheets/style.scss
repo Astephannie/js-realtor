@@ -10,6 +10,9 @@
 		right: 45px;
 	}
 }
+.txt-center{
+	text-align: center;
+}
 .txt-gray{
 	color: #878787;
 }
@@ -122,10 +125,15 @@ header{
 	}
 	.bottom-content{
 		position: absolute;
-		bottom: 70px;
+		bottom: 35px;
 		width: 100%;
 		p{
 			text-align: center;
+		}
+		img{
+			margin-top: 15px;
+			position: relative;
+			z-index: 5;
 		}
 	}
 }

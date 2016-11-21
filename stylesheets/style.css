@@ -6,6 +6,9 @@
   left: 45px;
   right: 45px; }
 
+.txt-center {
+  text-align: center; }
+
 .txt-gray {
   color: #878787; }
 
@@ -97,10 +100,14 @@ header {
       background-position: 99% 50%; }
   #firstPage .bottom-content {
     position: absolute;
-    bottom: 70px;
+    bottom: 35px;
     width: 100%; }
     #firstPage .bottom-content p {
       text-align: center; }
+    #firstPage .bottom-content img {
+      margin-top: 15px;
+      position: relative;
+      z-index: 5; }
 
 footer .bottom-right {
   position: fixed;
