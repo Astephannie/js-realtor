@@ -30,10 +30,6 @@
 .txt-pink {
   color: #e5218a; }
 
-.span-icon {
-  vertical-align: super;
-  padding-left: 5px; }
-
 .fs-10 {
   font-size: 10px; }
 
@@ -43,25 +39,29 @@
 .fs-25 {
   font-size: 25px; }
 
+.mt-20 {
+  margin-top: 20px; }
+
 .pt-10 {
   padding-top: 10px; }
 
 .pt-25 {
   padding-top: 25px; }
 
-.mt-20 {
-  margin-top: 20px; }
-
 .p-10 {
   padding-top: 10px !important;
   padding-bottom: 10px !important; }
 
+p {
+  margin: 0; }
+
+.span-icon {
+  vertical-align: super;
+  padding-left: 5px; }
+
 .bg-pink {
   background-color: #e5218a;
   height: 5px; }
-
-p {
-  margin: 0; }
 
 header {
   position: fixed;
@@ -96,8 +96,13 @@ header {
       fill: #e5218a; }
     .navbar-nav li a:focus polygon, .navbar-nav li a:hover polygon {
       fill: #e5218a; }
+  .navbar-nav li .a-underline {
+    padding: 15px 0 5px !important;
+    margin: 0 15px !important; }
+  .navbar-nav li .a-underline:focus, .navbar-nav li .a-underline:hover {
+    border-bottom: 1px solid #e5218a; }
   .navbar-nav li .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .fixed-nav {
   background-color: transparent;

@@ -14,17 +14,19 @@ $(document).ready(function() {
 			});
 		} // End if
 	});
-     
-});
-
-
-var a = $(".fixed-nav").offset().top;
-
-$(document).scroll(function(){
-    if($(this).scrollTop() > a)
-    {   
-       $('.fixed-nav').css({"background":"red"});
+    
+    $(window).scroll(function() {
+    if ($(".bottom-content").offset().top > 50) {
+        $("#fixed-nav").attr("style", "background-color:#231f20");
+        $(".brand-nav").attr("style", "display:block");
     } else {
-       $('.fixed-nav').css({"background":"transparent"});
-    }
+        $("#fixed-nav").attr("style", "background-color:transparent");
+        $(".brand-nav").attr("style", "display:none");
+    }   
 });
+
+});
+
+
+
+
