@@ -9,9 +9,30 @@
 .txt-gray {
   color: #878787; }
 
+.txt-white {
+  color: #fff; }
+
+.txt-yellow {
+  color: #FBFF01; }
+
+.txt-right {
+  text-align: right; }
+
 .span-icon {
   vertical-align: super;
   padding-left: 5px; }
+
+.fs-10 {
+  font-size: 10px; }
+
+.fs-25 {
+  font-size: 25px; }
+
+.pt-25 {
+  padding-top: 25px; }
+
+p {
+  margin: 0; }
 
 header {
   position: fixed;
@@ -51,6 +72,19 @@ header {
   color: #e5218a !important; }
 
 #firstPage {
-  background-image: url(../assets/images/bg.jpg); }
+  background-image: url(../assets/images/bg.jpg);
+  background-size: cover; }
+  #firstPage .content {
+    text-align: center; }
+    #firstPage .content img {
+      margin-top: 15%; }
+    #firstPage .content h1 {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin-top: 0 !important; }
+    #firstPage .content form input {
+      background-image: url(../assets/icons/search.png);
+      background-repeat: no-repeat;
+      background-position: 99% 50%; }
 
 /*# sourceMappingURL=style.css.map */
