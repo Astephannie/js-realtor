@@ -1,5 +1,8 @@
 // GENERAL CLASSES
 
+body{
+	height: auto !important;
+}
 .section{
 	position: relative;
 	.frame{
@@ -10,6 +13,12 @@
 		left: 45px;
 		right: 45px;
 		z-index: 1;
+		@media (max-width: 800px) {
+			top: 20px;
+			bottom:	20px;
+			left: 20px;
+			right: 20px;
+		}
 	}
 }
 .txt-center{text-align: center;}
@@ -140,6 +149,9 @@ header{
 		width: 100%;
 		p{
 			text-align: center;
+			@media (max-width: 800px) {
+				font-size: 13px;
+			}
 		}
 		img{
 			margin-top: 15px;
@@ -157,6 +169,9 @@ header{
 		z-index: 5;
 		& .content-slider{
 			padding: 115px 40px 60px 105px;
+			@media (max-width: 800px) {
+				padding: 50px;
+			}
 			& .cost{
 				font-size: 50px;
 				color: #e5218a;
@@ -165,6 +180,9 @@ header{
 			& .frame-feature{
 				border: 1px solid #bfbfbf;
 				padding: 10px 0px;
+				@media (max-width: 800px) {
+					padding: 5px;
+				}
 				img{
 					height: 25px;
 					padding-bottom: 5px;
@@ -172,6 +190,9 @@ header{
 			}
 			& h5{
 				padding: 10px 30px;
+				@media (max-width: 800px) {
+					padding: 5px;
+				}
 			}
 			.button-slider{
 				padding: 0 17%;

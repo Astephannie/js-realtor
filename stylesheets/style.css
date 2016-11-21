@@ -1,3 +1,6 @@
+body {
+  height: auto !important; }
+
 .section {
   position: relative; }
   .section .frame {
@@ -8,6 +11,12 @@
     left: 45px;
     right: 45px;
     z-index: 1; }
+    @media (max-width: 800px) {
+      .section .frame {
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px; } }
 
 .txt-center {
   text-align: center; }
@@ -136,6 +145,9 @@ header {
     width: 100%; }
     #firstPage .bottom-content p {
       text-align: center; }
+      @media (max-width: 800px) {
+        #firstPage .bottom-content p {
+          font-size: 13px; } }
     #firstPage .bottom-content img {
       margin-top: 15px;
       position: relative;
@@ -146,6 +158,9 @@ header {
   z-index: 5; }
   #secondPage .content .content-slider {
     padding: 115px 40px 60px 105px; }
+    @media (max-width: 800px) {
+      #secondPage .content .content-slider {
+        padding: 50px; } }
     #secondPage .content .content-slider .cost {
       font-size: 50px;
       color: #e5218a;
@@ -153,11 +168,17 @@ header {
     #secondPage .content .content-slider .frame-feature {
       border: 1px solid #bfbfbf;
       padding: 10px 0px; }
+      @media (max-width: 800px) {
+        #secondPage .content .content-slider .frame-feature {
+          padding: 5px; } }
       #secondPage .content .content-slider .frame-feature img {
         height: 25px;
         padding-bottom: 5px; }
     #secondPage .content .content-slider h5 {
       padding: 10px 30px; }
+      @media (max-width: 800px) {
+        #secondPage .content .content-slider h5 {
+          padding: 5px; } }
     #secondPage .content .content-slider .button-slider {
       padding: 0 17%; }
       #secondPage .content .content-slider .button-slider .button-slider-color {

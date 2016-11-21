@@ -9,24 +9,10 @@ $(document).ready(function() {
 			var hash = this.hash;
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 800, function(){
+			}, 0, function(){
 			window.location.hash = hash;
 			});
 		} // End if
 	});
-    
-    $(window).scroll(function() {
-    if ($(".bottom-content").offset().top > 50) {
-        $("#fixed-nav").attr("style", "background-color:#231f20");
-        $(".brand-nav").attr("style", "display:block");
-    } else {
-        $("#fixed-nav").attr("style", "background-color:transparent");
-        $(".brand-nav").attr("style", "display:none");
-    }   
+     
 });
-
-});
-
-
-
-
